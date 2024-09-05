@@ -1,5 +1,90 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.border {
+    border: solid red;
+}
+
+header {
+    background-color: yellowgreen;
+    grid-area: header;
+}
+
+#izquierda {
+    background-color: antiquewhite;
+    grid-area: izquierda;
+    display: grid;
+}
+
+#arriba {
+    background-color: aqua;
+    grid-area: arriba;
+}
+
+#centroArriba {
+    background-color: yellow;
+    grid-area: centroArriba;
+}
+
+#centroAbajo {
+    background-color: tomato;
+    grid-area: centroAbajo;
+}
+
+
+body {
+    background-color: beige;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "izquierda arriba arriba"
+        "izquierda centroArriba centroArriba"
+        "izquierda centroAbajo centroAbajo";
+    grid-template-rows: 20% 30% 30% 20%; 
+    grid-template-columns: 30% auto 30%;
+}
+
+#foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+img {
+    width: 140px;
+    /* Ajustar el tamaño de la imagen según sea necesario */
+    height: 190px;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: "Nerko One", cursive;
+    font-weight: normal;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 40px;
+}
+
+p{
+    font-family: "Handjet", sans-serif;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 1025px) {}
+
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {}
+
+
+@media screen and (max-width: 480px) {}
