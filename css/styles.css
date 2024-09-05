@@ -4,87 +4,129 @@
     box-sizing: border-box;
 }
 
-.border {
-    border: solid red;
-}
 
 header {
-    background-color: yellowgreen;
+    background-color: #faebd7;
     grid-area: header;
 }
 
 #izquierda {
-    background-color: antiquewhite;
+    background-color: #D2E4E8;
     grid-area: izquierda;
     display: grid;
-}
-
-#arriba {
-    background-color: aqua;
-    grid-area: arriba;
+    padding: 20px;
 }
 
 #centroArriba {
-    background-color: yellow;
+    background-color: #faebd7;
     grid-area: centroArriba;
+    
 }
 
 #centroAbajo {
-    background-color: tomato;
+    background-color: #faebd7;
     grid-area: centroAbajo;
 }
 
 
-body {
-    background-color: beige;
-    height: 100vh;
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "izquierda arriba arriba"
-        "izquierda centroArriba centroArriba"
-        "izquierda centroAbajo centroAbajo";
-    grid-template-rows: 20% 30% 30% 20%; 
-    grid-template-columns: 30% auto 30%;
+
+
+@media screen and (min-width: 1025px) {
+    body {
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+            "izquierda header header"
+            "izquierda centroArriba centroArriba"
+            "izquierda centroAbajo centroAbajo"
+            "izquierda centroAbajo centroAbajo";
+        grid-template-rows: 20% auto 25% auto; 
+        grid-template-columns: 30% auto 30%;
+    }
+    
+    #foto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 10px;
+    }
+    
+    #img{
+        border-radius: 50%;
+        width: 140px;
+        height: 190px;
+        box-shadow: 5px 3px 9px 9px rgb(156, 125, 125);
+    }
+    
+    h1 {
+        font-size: 25px;
+        font-family: "Nerko One", cursive;
+        font-weight: normal;
+        text-align: justify;
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Nerko One", sans-serif;
+        font-size: 50px;
+    }
+    
+    p{
+        font-family: "Chakra Petch", sans-serif;
+        font-size: 15px;
+        text-align: justify;
+    }
+    
+    .historia{
+        font-size: 17px;
+        margin: 10px;
+        padding: 0 20px;
+    }
+    
+    #historia{
+        padding: 0 10px;
+    }
+    
+    #hobbie{
+        padding: 0 10px;
+    }
+    
+    #pasatiempo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    
+    #anime{
+        width: 350px;
+        height: 250px;
+    }
+    
+    #manga{
+        height: 250px;
+    }
+    
+    #deporte{
+        width: 300px;
+        height: 250px;
+    }
+    
+    .imagenes{
+        overflow: hidden;
+        padding: 0 10px;
+    }
 }
 
-#foto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 10px;
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+
 }
 
-img {
-    width: 140px;
-    /* Ajustar el tamaño de la imagen según sea necesario */
-    height: 190px;
+
+@media screen and (max-width: 480px) {
+    
 }
-
-h1 {
-    font-size: 25px;
-    font-family: "Nerko One", cursive;
-    font-weight: normal;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Protest Guerrilla", sans-serif;
-    font-size: 40px;
-}
-
-p{
-    font-family: "Handjet", sans-serif;
-    font-size: 20px;
-}
-
-@media screen and (min-width: 1025px) {}
-
-
-@media screen and (min-width: 480px) and (max-width: 1024px) {}
-
-
-@media screen and (max-width: 480px) {}
