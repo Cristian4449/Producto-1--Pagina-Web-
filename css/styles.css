@@ -20,7 +20,7 @@ header {
 #centroArriba {
     background-color: #faebd7;
     grid-area: centroArriba;
-    
+
 }
 
 #centroAbajo {
@@ -40,10 +40,10 @@ header {
             "izquierda centroArriba centroArriba"
             "izquierda centroAbajo centroAbajo"
             "izquierda centroAbajo centroAbajo";
-        grid-template-rows: 20% auto 25% auto; 
+        grid-template-rows: 20% auto 25% auto;
         grid-template-columns: 30% auto 30%;
     }
-    
+
     #foto {
         display: flex;
         flex-direction: column;
@@ -51,21 +51,21 @@ header {
         justify-content: flex-start;
         padding-top: 10px;
     }
-    
-    #img{
+
+    #img {
         border-radius: 50%;
         width: 140px;
         height: 190px;
         box-shadow: 5px 3px 9px 9px rgb(156, 125, 125);
     }
-    
+
     h1 {
         font-size: 25px;
         font-family: "Nerko One", cursive;
         font-weight: normal;
         text-align: justify;
     }
-    
+
     header {
         display: flex;
         align-items: center;
@@ -73,49 +73,49 @@ header {
         font-family: "Nerko One", sans-serif;
         font-size: 50px;
     }
-    
-    p{
+
+    p {
         font-family: "Chakra Petch", sans-serif;
         font-size: 15px;
         text-align: justify;
     }
-    
-    .historia{
+
+    .historia {
         font-size: 17px;
         margin: 10px;
         padding: 0 20px;
     }
-    
-    #historia{
+
+    #historia {
         padding: 0 10px;
     }
-    
-    #hobbie{
+
+    #hobbie {
         padding: 0 10px;
     }
-    
-    #pasatiempo{
+
+    #pasatiempo {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
     }
-    
-    #anime{
+
+    #anime {
         width: 350px;
         height: 250px;
     }
-    
-    #manga{
+
+    #manga {
         height: 250px;
     }
-    
-    #deporte{
+
+    #deporte {
         width: 300px;
         height: 250px;
     }
-    
-    .imagenes{
+
+    .imagenes {
         overflow: hidden;
         padding: 0 10px;
     }
@@ -123,10 +123,190 @@ header {
 
 
 @media screen and (min-width: 480px) and (max-width: 1024px) {
+    body {
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+            "izquierda header"
+            "izquierda centroArriba"
+            "izquierda centroAbajo";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 20% 80%;
+    }
 
+    #foto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 10px;
+    }
+
+    #img {
+        border-radius: 50%;
+        width: 140px;
+        height: 190px;
+        box-shadow: 5px 3px 9px 9px rgb(156, 125, 125);
+    }
+
+    h1 {
+        font-size: 25px;
+        font-family: "Nerko One", cursive;
+        font-weight: normal;
+        text-align: justify;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Nerko One", sans-serif;
+        font-size: 50px;
+    }
+
+    p {
+        font-family: "Chakra Petch", sans-serif;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .historia {
+        font-size: 15px;
+        margin: 8px;
+    }
+
+    .historia {
+        font-size: 17px;
+        margin: 10px;
+        padding: 0 20px;
+    }
+
+    #historia {
+        padding: 0 10px;
+    }
+
+    #hobbie {
+        padding: 0 10px;
+    }
+
+    #pasatiempo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    #anime {
+        width: 350px;
+        height: 250px;
+    }
+
+    #manga {
+        height: 250px;
+    }
+
+    #deporte {
+        width: 300px;
+        height: 250px;
+    }
+
+    .imagenes {
+        overflow: hidden;
+        padding: 0 10px;
+    }
 }
 
 
 @media screen and (max-width: 480px) {
-    
+    body {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "izquierda"
+            "centroArriba"
+            "centroAbajo";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 100%;
+    }
+
+    #foto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 0 10px;
+    }
+
+    #img {
+        border-radius: 50%;
+        width: 140px;
+        height: 190px;
+        box-shadow: 5px 3px 9px 9px rgb(156, 125, 125);
+    }
+
+    h1 {
+        font-size: 25px;
+        font-family: "Nerko One", cursive;
+        font-weight: normal;
+        text-align: justify;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Nerko One", sans-serif;
+        font-size: 50px;
+    }
+
+    p {
+        font-family: "Chakra Petch", sans-serif;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .historia {
+        font-size: 15px;
+        margin: 8px;
+    }
+
+    .historia {
+        font-size: 17px;
+        margin: 10px;
+        padding: 0 20px;
+    }
+
+    #historia {
+        padding: 0 10px;
+    }
+
+    #hobbie {
+        padding: 0 10px;
+    }
+
+    #pasatiempo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    #anime {
+        width: 350px;
+        height: 250px;
+    }
+
+    #manga {
+        height: 250px;
+    }
+
+    #deporte {
+        width: 300px;
+        height: 250px;
+    }
+
+    .imagenes {
+        overflow: hidden;
+        margin: 5px;
+    }
 }
